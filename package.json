@@ -4,7 +4,7 @@
   "description": "A simple nodejs application.",
   "main": "app.js",
   "engines": {
-    "node": "20.19.3"
+    "node": "24.12.0"
   },
   "scripts": {
     "start": "node app.js",
@@ -12,11 +12,9 @@
   },
   "keywords": [
     "node",
-    "docker",
     "aws",
     "jenkins",
-    "ec2",
-    "ecs"
+    "ec2"
   ],
   "author": "",
   "license": "ISC",
