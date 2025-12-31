@@ -4,7 +4,7 @@
 
 ## Task Description
 
-This project implements a complete CI/CD pipeline using **Terraform**, **Jenkins**, and **Amazon EC2**. All infrastructure components—including VPC networking, IAM roles, Application EC2, Jenkins EC2, and CloudWatch logging—are provisioned using Terraform.
+This project implements a complete CI/CD pipeline using **Terraform**, **Jenkins**, and **Amazon EC2**. All infrastructure components including VPC networking, IAM roles, Application EC2, Jenkins EC2, and CloudWatch logging are provisioned using Terraform.
 
 Jenkins is deployed on a **private EC2 instance without a public IP** and is accessed securely using **AWS Systems Manager (SSM) Session Manager**. The Node.js application runs on a public EC2 instance using **PM2** as a process manager and **Nginx** as a reverse proxy. The Jenkins pipeline automates source code checkout, dependency installation, testing, deployment, rollback handling, and health checks.
 
@@ -238,5 +238,3 @@ Common issues resolved during this project included:
 - Malformed SSH heredocs in pipeline scripts.
 - Terraform type mismatches for security groups.
 - Missing SSH key pair assignment.
-
-Each issue was resolved through pipeline optimization, correct separation of responsibilities, syntax corrections, and Terraform configuration fixes.
